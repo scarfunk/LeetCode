@@ -21,7 +21,6 @@ class Solution:
                 l2 = l2.next
             sum += carry
             carry, val  = sum // 10, sum % 10
-            print(carry, val)
             # 노드 생성해가면서 붙인다
             head.next = ListNode(val)
             head = head.next
